@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+test_module.access_sale_channel,access_sale_channel,test_module.model_sale_channel,base.group_user,1,1,1,True
+test_module.access_sale_quota,access_sale_quota,test_module.model_sale_quota,base.group_user,1,1,1,True

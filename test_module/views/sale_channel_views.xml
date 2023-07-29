@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="sale_channel_tree_view" model="ir.ui.view">
+    <field name="name">sale.channel.tree.view</field>
+    <field name="model">sale.channel</field>
+    <field name="arch" type="xml">
+        <tree string="Sale Channel Tree" default_order="name">
+            <field name="name"/>
+            <field name="code" />
+        </tree>
+    </field>
+</record>
+
+    <record id="sale_channel_form_view" model="ir.ui.view">
+        <field name="name">sale.channel.form.view</field>
+        <field name="model">sale.channel</field>
+        <field name="arch" type="xml">
+            <form string="Sale Channel Form">
+                <sheet>
+                    <h1>
+                        <field name="name" required="True"/>
+                    </h1>
+                    <group>
+                        <field name="code" required="True"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
